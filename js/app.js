@@ -4,8 +4,7 @@ define([
 	"controllers/controllers",
 	"services/services",
 	//"filter/filter",
-	"directives/directives",
-	"directives/simpleTemplateDirective"
+	"directives/directives"
  	//"models/models"
 ], function (angular) {
 	"use strict";
