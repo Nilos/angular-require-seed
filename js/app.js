@@ -1,7 +1,7 @@
 define([
 	"angular",
 	"angularRoute",
-	//"controllers/controllers",
+	"controllers/controllers",
 	"services/services",
 	//"filter/filter",
 	"directives/directives",
