@@ -20,11 +20,11 @@ grunt.initConfig({
 			options: {
 				paths: ["public/less"],
 				sourceMap: true,
-				sourceMapFilename: "public/css/style.css.map",
+				sourceMapFilename: "css/style.css.map",
 				sourceMapRootpath: "/"
 			},
 			files: {
-				"public/css/style.css": "public/less/style.less"
+				"public/css/style.css": "less/style.less"
 			}
 		}
 	},
@@ -34,14 +34,14 @@ grunt.initConfig({
 			  { expand: true,
 					cwd: "node_modules/font-awesome/",
 					src: ["css/**", "fonts/**"],
-					dest: "public/vendor/",
+					dest: "vendor/",
 					filter: "isFile" }
 			]
 		}
 	},
 	watch: {
 		scripts: {
-			files: ["public/less/**/*.less"],
+			files: ["less/**/*.less"],
 			tasks: ["less"],
 			options: {
 				spawn: false
@@ -51,7 +51,7 @@ grunt.initConfig({
 	browserSync: {
 		dev: {
 			bsFiles: {
-				src: "public/css/*.css"
+				src: "css/*.css"
 			},
 			options: {
 				port: 3001,
